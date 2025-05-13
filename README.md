@@ -5,3 +5,6 @@ Tools
 ## Enumeración
 
 ## Inyección SQL (SQLi): Blind SQLi
+### BLIND
+### TIME
+### OOB
