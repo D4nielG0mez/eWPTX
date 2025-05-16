@@ -13,6 +13,10 @@ dirb http://172.17.0.2/ [rockyou, common, big] -N 401 (Ignora un método) -r (No
 
 
 ## Inyección SQL (SQLi): Blind SQLi
-### BLIND
+### BOOLEAN
 ### TIME
 ### OOB
+## 
+
+## Estratégia
+1. Iniciar por el CMS MAGENTO
