@@ -1,5 +1,5 @@
 # eWPTX
-Tools
+---
 ## Escaneo de puertos
 ![image](https://github.com/user-attachments/assets/02a7281d-02c7-43ec-afe6-ece2eecf0317)
 
@@ -12,9 +12,9 @@ dirb http://172.17.0.2/ [rockyou, common, big] -N 401 (Ignora un método) -r (No
 ##
 dirsearch -u http://[IP]/ -w [WORDLIST] -t 16 -e php,txt -f (NO ESTÁ DISPONIBLE EN EL EXAMEN)
 
+---
 
-
-## Inyección SQL (SQLi): Blind SQLi
+## 💉 Inyección SQL (SQLi): Blind SQLi
 En el examen: MAGENTO ES VULNERABLE A SQLi
 
 En las inyecciones a ciegas, el resultado no se ve en la pantalla (son deductivas... a partir del comportamiento de la aplicación)
@@ -88,6 +88,7 @@ Si se puede lelvar la info fuera del servidor
 
 - sqlmap -r request_time.txt -p descripción --technique=T --risk=3 --level=3 --current-db --dbms=mysql --flush-session
 
+---
 
-## Estratégia
+## ♟️ Estratégia
 1. Iniciar por el CMS MAGENTO
