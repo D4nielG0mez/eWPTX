@@ -93,4 +93,4 @@ Si se puede lelvar la info fuera del servidor
 ## ♟️ Estratégia
 1. Iniciar por el CMS MAGENTO
    
-   - Version: [IP]/magento/magento_version
+   - Version: [IP]/magento/magento_version (Buscar vulnerabilidad de la versión)
