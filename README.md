@@ -104,6 +104,11 @@ Si se puede lelvar la info fuera del servidor
 - Ayuda: hashcat --help | grep JWT
 - Ejemplo: hashcat -m 16500 --force -a 0 token.jwt /usr/share/wordlists/rockyou.txt
 
+### John para Hashes con SALT & PEPPER
+- bcrypt.hash (Lista de hashes con SALT & PEPPER)
+- john --format=bcrypt bcrypt.hash --wordlist=/usr/share/wordlists/rockyou.txt
+
+
 
 ## ♟️ Estratégia
 1. Iniciar por el CMS MAGENTO
