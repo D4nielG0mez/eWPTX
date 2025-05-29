@@ -98,6 +98,13 @@ Si se puede lelvar la info fuera del servidor
 
 ---
 
+## JWT
+### Tools
+- hashcat
+- Ayuda: hashcat --help | grep JWT
+- Ejemplo: hashcat -m 16500 --force -a 0 token.jwt /usr/share/wordlists/rockyou.txt
+
+
 ## ♟️ Estratégia
 1. Iniciar por el CMS MAGENTO
    
